@@ -1,0 +1,722 @@
+[
+    {
+        "query": "what is nlp",
+        "document": "Natural Language Processing (NLP) is a branch of artificial intelligence that enables computers to understand human language."
+    },
+    {
+        "query": "what is machine learning",
+        "document": "Machine learning is a field of artificial intelligence where systems learn patterns from data without explicit programming."
+    },
+    {
+        "query": "what is deep learning",
+        "document": "Deep learning is a subset of machine learning that uses artificial neural networks with many layers."
+    },
+    {
+        "query": "what is python",
+        "document": "Python is a high level programming language widely used for web development, data science, and artificial intelligence."
+    },
+    {
+        "query": "what is java",
+        "document": "Java is an object oriented programming language designed for portability across different platforms."
+    },
+    {
+        "query": "what is operating system",
+        "document": "An operating system manages computer hardware, software resources, and provides services for applications."
+    },
+    {
+        "query": "what is database",
+        "document": "A database is an organized collection of structured information that allows efficient storage and retrieval."
+    },
+    {
+        "query": "what is sql",
+        "document": "SQL is a language used to manage and query relational databases."
+    },
+    {
+        "query": "what is cloud computing",
+        "document": "Cloud computing provides computing resources such as servers and storage over the internet."
+    },
+    {
+        "query": "what is internet of things",
+        "document": "The Internet of Things connects physical devices through the internet so they can exchange data."
+    },
+    {
+        "query": "what is artificial intelligence",
+        "document": "Artificial intelligence is the simulation of human intelligence by machines capable of reasoning and learning."
+    },
+    {
+        "query": "what is computer vision",
+        "document": "Computer vision enables computers to interpret and understand information from images and videos."
+    },
+    {
+        "query": "what is reinforcement learning",
+        "document": "Reinforcement learning trains an agent to make decisions by maximizing cumulative rewards."
+    },
+    {
+        "query": "what is supervised learning",
+        "document": "Supervised learning trains a model using labeled examples to predict future outcomes."
+    },
+    {
+        "query": "what is unsupervised learning",
+        "document": "Unsupervised learning discovers hidden patterns from unlabeled data."
+    },
+    {
+        "query": "what is neural network",
+        "document": "A neural network is a computational model inspired by biological neurons and is widely used in deep learning."
+    },
+    {
+        "query": "what is overfitting",
+        "document": "Overfitting occurs when a machine learning model memorizes training data and performs poorly on unseen data."
+    },
+    {
+        "query": "what is underfitting",
+        "document": "Underfitting occurs when a model is too simple to capture the underlying patterns in the data."
+    },
+    {
+        "query": "what is data science",
+        "document": "Data science combines statistics, programming, and domain knowledge to extract insights from data."
+    },
+    {
+        "query": "what is big data",
+        "document": "Big data refers to extremely large datasets that require specialized tools for storage and analysis."
+    },
+    {
+        "query": "what is blockchain",
+        "document": "Blockchain is a decentralized digital ledger that securely records transactions."
+    },
+    {
+        "query": "what is cybersecurity",
+        "document": "Cybersecurity protects computer systems, networks, and data from digital attacks."
+    },
+    {
+        "query": "what is encryption",
+        "document": "Encryption converts readable information into encoded text to protect confidentiality."
+    },
+    {
+        "query": "what is hashing",
+        "document": "Hashing transforms input data into a fixed length value commonly used for data integrity."
+    },
+    {
+        "query": "what is compiler",
+        "document": "A compiler translates source code into machine code before execution."
+    },
+    {
+        "query": "what is interpreter",
+        "document": "An interpreter executes source code line by line without producing a separate executable."
+    },
+    {
+        "query": "what is api",
+        "document": "An API allows different software applications to communicate with each other."
+    },
+    {
+        "query": "what is recursion",
+        "document": "Recursion is a programming technique where a function calls itself to solve smaller instances of a problem."
+    },
+    {
+        "query": "what is stack",
+        "document": "A stack is a linear data structure that follows the Last In First Out principle."
+    },
+    {
+        "query": "what is queue",
+        "document": "A queue is a linear data structure that follows the First In First Out principle."
+    },
+  {
+    "query": "what is kernel",
+    "document": "The kernel is the central component of an operating system responsible for managing hardware resources and system processes."
+  },
+  {
+    "query": "what is process",
+    "document": "A process is a program that is currently being executed along with its allocated memory and resources."
+  },
+  {
+    "query": "what is thread",
+    "document": "A thread is the smallest unit of execution within a process and shares resources with other threads in the same process."
+  },
+  {
+    "query": "what is virtualization",
+    "document": "Virtualization allows multiple virtual machines to run on a single physical computer using shared hardware resources."
+  },
+  {
+    "query": "what is docker",
+    "document": "Docker is a container platform that packages applications together with their dependencies for consistent deployment."
+  },
+  {
+    "query": "what is kubernetes",
+    "document": "Kubernetes is a container orchestration system that automates deployment, scaling, and management of containerized applications."
+  },
+  {
+    "query": "what is git",
+    "document": "Git is a distributed version control system used to track changes in source code during software development."
+  },
+  {
+    "query": "what is github",
+    "document": "GitHub is a cloud platform for hosting Git repositories and enabling collaborative software development."
+  },
+  {
+    "query": "what is linux",
+    "document": "Linux is an open-source operating system known for stability, flexibility, and strong community support."
+  },
+  {
+    "query": "what is windows",
+    "document": "Microsoft Windows is a family of operating systems that provides a graphical user interface for personal computers."
+  },
+  {
+    "query": "what is cache memory",
+    "document": "Cache memory stores frequently accessed data close to the processor to reduce memory access time."
+  },
+  {
+    "query": "what is ram",
+    "document": "Random Access Memory temporarily stores data and instructions that are actively used by the processor."
+  },
+  {
+    "query": "what is rom",
+    "document": "Read Only Memory permanently stores firmware required to initialize computer hardware."
+  },
+  {
+    "query": "what is cpu",
+    "document": "The Central Processing Unit executes instructions and performs arithmetic and logical operations."
+  },
+  {
+    "query": "what is gpu",
+    "document": "A Graphics Processing Unit accelerates image rendering and massively parallel numerical computations."
+  },
+  {
+    "query": "what is load balancing",
+    "document": "Load balancing distributes incoming requests across multiple servers to improve performance and availability."
+  },
+  {
+    "query": "what is latency",
+    "document": "Latency is the time delay between sending a request and receiving a response."
+  },
+  {
+    "query": "what is bandwidth",
+    "document": "Bandwidth represents the maximum amount of data that can be transmitted over a network in a given time."
+  },
+  {
+    "query": "what is dns",
+    "document": "The Domain Name System translates human-readable domain names into IP addresses."
+  },
+  {
+    "query": "what is ip address",
+    "document": "An IP address uniquely identifies a device connected to a computer network."
+  },
+  {
+    "query": "what is http",
+    "document": "HTTP is a protocol used to transfer web pages and other resources between clients and servers."
+  },
+  {
+    "query": "what is https",
+    "document": "HTTPS secures HTTP communication using encryption provided by Transport Layer Security."
+  },
+  {
+    "query": "what is tcp",
+    "document": "TCP is a reliable transport protocol that guarantees ordered and error-checked delivery of data."
+  },
+  {
+    "query": "what is udp",
+    "document": "UDP is a lightweight transport protocol that prioritizes speed over guaranteed delivery."
+  },
+  {
+    "query": "what is firewall",
+    "document": "A firewall monitors and filters incoming and outgoing network traffic according to security rules."
+  },
+  {
+    "query": "what is phishing",
+    "document": "Phishing is a cyberattack that tricks users into revealing sensitive information through deceptive messages."
+  },
+  {
+    "query": "what is malware",
+    "document": "Malware is malicious software designed to damage, disrupt, or gain unauthorized access to computer systems."
+  },
+  {
+    "query": "what is ransomware",
+    "document": "Ransomware encrypts a victim's files and demands payment to restore access."
+  },
+  {
+    "query": "what is digital signature",
+    "document": "A digital signature verifies the authenticity and integrity of electronic documents."
+  },
+  {
+    "query": "what is authentication",
+    "document": "Authentication verifies the identity of a user before granting access to a system."
+  },
+  {
+    "query": "what is authorization",
+    "document": "Authorization determines what actions an authenticated user is permitted to perform."
+  },
+  {
+    "query": "what is normalization",
+    "document": "Database normalization organizes tables to reduce redundancy and improve data integrity."
+  },
+  {
+    "query": "what is primary key",
+    "document": "A primary key uniquely identifies each record in a database table."
+  },
+  {
+    "query": "what is foreign key",
+    "document": "A foreign key establishes a relationship between records in different database tables."
+  },
+  {
+    "query": "what is indexing",
+    "document": "Database indexing improves query performance by allowing faster data retrieval."
+  },
+  {
+    "query": "what is binary tree",
+    "document": "A binary tree is a hierarchical data structure in which each node has at most two children."
+  },
+  {
+    "query": "what is graph",
+    "document": "A graph consists of vertices connected by edges and is commonly used to represent relationships."
+  },
+  {
+    "query": "what is linked list",
+    "document": "A linked list stores elements as nodes connected through references rather than contiguous memory."
+  },
+  {
+    "query": "what is binary search",
+    "document": "Binary search efficiently locates an element in a sorted collection by repeatedly dividing the search interval."
+  },
+  {
+    "query": "what is quicksort",
+    "document": "Quicksort is a divide-and-conquer sorting algorithm that partitions elements around a pivot."
+  },
+  {
+    "query": "what is merge sort",
+    "document": "Merge sort recursively divides a collection into smaller parts before merging them in sorted order."
+  },
+  {
+    "query": "what is dynamic programming",
+    "document": "Dynamic programming solves complex optimization problems by storing solutions to overlapping subproblems."
+  },
+  {
+    "query": "what is greedy algorithm",
+    "document": "A greedy algorithm builds a solution by repeatedly making locally optimal decisions."
+  },
+  {
+    "query": "what is decision tree",
+    "document": "A decision tree predicts outcomes by recursively splitting data according to feature values."
+  },
+  {
+    "query": "what is logistic regression",
+    "document": "Logistic regression is a classification algorithm that estimates the probability of discrete outcomes."
+  },
+  {
+    "query": "what is k means clustering",
+    "document": "K-means clustering partitions data into groups by minimizing distances between points and cluster centers."
+  },
+  {
+    "query": "what is dimensionality reduction",
+    "document": "Dimensionality reduction decreases the number of input features while preserving important information."
+  },
+  {
+    "query": "what is feature engineering",
+    "document": "Feature engineering transforms raw data into meaningful variables that improve machine learning models."
+  },
+  {
+    "query": "what is gradient descent",
+    "document": "Gradient descent iteratively adjusts model parameters to minimize a loss function."
+  },
+  {
+    "query": "what is activation function",
+    "document": "An activation function introduces nonlinearity into a neural network, enabling it to learn complex patterns."
+  },
+  {
+    "query": "what is microprocessor",
+    "document": "A microprocessor is an integrated circuit that performs the functions of a central processing unit on a single chip."
+  },
+  {
+    "query": "what is motherboard",
+    "document": "A motherboard is the main circuit board that connects and allows communication between computer components."
+  },
+  {
+    "query": "what is hard disk",
+    "document": "A hard disk is a non-volatile storage device used to permanently store digital information."
+  },
+  {
+    "query": "what is solid state drive",
+    "document": "A solid state drive stores data using flash memory, providing faster access speeds than traditional hard drives."
+  },
+  {
+    "query": "what is firmware",
+    "document": "Firmware is low-level software permanently stored in hardware to control the operation of electronic devices."
+  },
+  {
+    "query": "what is booting",
+    "document": "Booting is the process of starting a computer and loading the operating system into memory."
+  },
+  {
+    "query": "what is scheduler",
+    "document": "A scheduler determines the order in which processes or threads receive CPU time for execution."
+  },
+  {
+    "query": "what is deadlock",
+    "document": "Deadlock is a situation where multiple processes wait indefinitely for resources held by each other."
+  },
+  {
+    "query": "what is paging",
+    "document": "Paging is a memory management technique that divides memory into fixed-size blocks for efficient allocation."
+  },
+  {
+    "query": "what is segmentation",
+    "document": "Segmentation is a memory management method that organizes memory into variable-sized logical sections."
+  },
+  {
+    "query": "what is socket programming",
+    "document": "Socket programming enables applications to communicate over a network using endpoints called sockets."
+  },
+  {
+    "query": "what is ethernet",
+    "document": "Ethernet is a widely used networking technology for connecting devices within a local area network."
+  },
+  {
+    "query": "what is wifi",
+    "document": "Wi-Fi is a wireless networking technology that allows devices to access networks without physical cables."
+  },
+  {
+    "query": "what is router",
+    "document": "A router forwards data packets between different computer networks based on destination addresses."
+  },
+  {
+    "query": "what is switch",
+    "document": "A network switch connects devices within the same network and forwards data using MAC addresses."
+  },
+  {
+    "query": "what is modem",
+    "document": "A modem converts digital signals into forms suitable for transmission over communication channels."
+  },
+  {
+    "query": "what is packet switching",
+    "document": "Packet switching divides data into smaller packets that are transmitted independently across a network."
+  },
+  {
+    "query": "what is mac address",
+    "document": "A MAC address is a unique hardware identifier assigned to a network interface for local communication."
+  },
+  {
+    "query": "what is subnet",
+    "document": "A subnet is a logical division of a larger network that improves organization and traffic management."
+  },
+  {
+    "query": "what is vpn",
+    "document": "A virtual private network creates an encrypted connection that securely transmits data over public networks."
+  },
+  {
+    "query": "what is session",
+    "document": "A session stores user-specific information across multiple interactions with a web application."
+  },
+  {
+    "query": "what is cookie",
+    "document": "A cookie is a small piece of data stored in a user's browser to remember preferences or session details."
+  },
+  {
+    "query": "what is html",
+    "document": "HTML is the standard markup language used to structure content on web pages."
+  },
+  {
+    "query": "what is css",
+    "document": "CSS is a stylesheet language used to control the appearance and layout of web pages."
+  },
+  {
+    "query": "what is javascript",
+    "document": "JavaScript is a programming language that adds interactive behavior to websites."
+  },
+  {
+    "query": "what is frontend development",
+    "document": "Frontend development focuses on creating the user interface and interactive components of web applications."
+  },
+  {
+    "query": "what is backend development",
+    "document": "Backend development involves building server-side logic, databases, and APIs that power applications."
+  },
+  {
+    "query": "what is full stack development",
+    "document": "Full stack development combines frontend and backend technologies to build complete web applications."
+  },
+  {
+    "query": "what is responsive design",
+    "document": "Responsive design ensures that web pages automatically adapt to different screen sizes and devices."
+  },
+  {
+    "query": "what is rest api",
+    "document": "A REST API follows architectural principles that enable communication between client and server using HTTP methods."
+  },
+  {
+    "query": "what is json",
+    "document": "JSON is a lightweight data interchange format commonly used for exchanging structured information between systems."
+  },
+  {
+    "query": "what is xml",
+    "document": "XML is a markup language designed to store and transport structured data in a human-readable format."
+  },
+  {
+    "query": "what is debugging",
+    "document": "Debugging is the process of identifying, analyzing, and fixing errors in software."
+  },
+  {
+    "query": "what is software testing",
+    "document": "Software testing evaluates a program to verify that it behaves correctly and satisfies specified requirements."
+  },
+  {
+    "query": "what is unit testing",
+    "document": "Unit testing verifies the correctness of individual functions or components in isolation."
+  },
+  {
+    "query": "what is integration testing",
+    "document": "Integration testing checks whether multiple software components work correctly when combined."
+  },
+  {
+    "query": "what is agile methodology",
+    "document": "Agile methodology is a software development approach that emphasizes iterative delivery and customer collaboration."
+  },
+  {
+    "query": "what is scrum",
+    "document": "Scrum is an Agile framework that organizes software development into short iterative cycles called sprints."
+  },
+  {
+    "query": "what is devops",
+    "document": "DevOps is a set of practices that integrates software development and IT operations to enable faster delivery."
+  },
+  {
+    "query": "what is continuous integration",
+    "document": "Continuous integration automatically merges and tests code changes to detect issues early."
+  },
+  {
+    "query": "what is continuous deployment",
+    "document": "Continuous deployment automatically releases validated software changes to production environments."
+  },
+  {
+    "query": "what is transfer learning",
+    "document": "Transfer learning improves performance by adapting knowledge learned from one task to another related task."
+  },
+  {
+    "query": "what is cross validation",
+    "document": "Cross validation estimates a machine learning model's performance by repeatedly training and testing on different data splits."
+  },
+  {
+    "query": "what is precision",
+    "document": "Precision measures the proportion of predicted positive instances that are actually positive."
+  },
+  {
+    "query": "what is recall",
+    "document": "Recall measures the proportion of actual positive instances that are correctly identified by a model."
+  },
+  {
+    "query": "what is f1 score",
+    "document": "The F1 score combines precision and recall into a single metric using their harmonic mean."
+  },
+  {
+    "query": "what is confusion matrix",
+    "document": "A confusion matrix summarizes classification performance by comparing predicted labels with actual labels."
+  },
+  {
+    "query": "what is recommendation system",
+    "document": "A recommendation system suggests relevant items to users based on preferences, behavior, or similarities."
+  },
+  {
+    "query": "what is generative ai",
+    "document": "Generative AI creates new content such as text, images, audio, or code by learning patterns from existing data."
+  },
+  {
+    "query": "what is large language model",
+    "document": "A large language model is a neural network trained on vast amounts of text to understand and generate human-like language."
+  },
+  {
+    "query": "what is bloom filter",
+    "document": "A Bloom filter is a probabilistic data structure that efficiently checks whether an element may exist in a set."
+  },
+  {
+    "query": "what is trie",
+    "document": "A trie is a tree-based data structure used for efficient storage and retrieval of strings."
+  },
+  {
+    "query": "what is heap",
+    "document": "A heap is a specialized tree structure that maintains the highest or lowest priority element at the root."
+  },
+  {
+    "query": "what is priority queue",
+    "document": "A priority queue stores elements according to priority rather than insertion order."
+  },
+  {
+    "query": "what is breadth first search",
+    "document": "Breadth First Search explores graph vertices level by level using a queue."
+  },
+  {
+    "query": "what is depth first search",
+    "document": "Depth First Search explores graph paths by visiting one branch completely before backtracking."
+  },
+  {
+    "query": "what is dijkstra algorithm",
+    "document": "Dijkstra's algorithm computes the shortest path from a source node to all reachable nodes in a weighted graph."
+  },
+  {
+    "query": "what is hash table",
+    "document": "A hash table stores key-value pairs and provides fast lookup through a hash function."
+  },
+  {
+    "query": "what is object oriented programming",
+    "document": "Object-oriented programming organizes software using objects that combine data and behavior."
+  },
+  {
+    "query": "what is class",
+    "document": "A class is a blueprint that defines the properties and behaviors of objects."
+  },
+  {
+    "query": "what is object",
+    "document": "An object is a runtime instance of a class containing its own data and methods."
+  },
+  {
+    "query": "what is encapsulation",
+    "document": "Encapsulation restricts direct access to an object's internal data while exposing controlled interfaces."
+  },
+  {
+    "query": "what is inheritance",
+    "document": "Inheritance allows one class to acquire the properties and methods of another class."
+  },
+  {
+    "query": "what is polymorphism",
+    "document": "Polymorphism enables the same interface to represent different underlying implementations."
+  },
+  {
+    "query": "what is abstraction",
+    "document": "Abstraction hides implementation details while exposing only essential functionality."
+  },
+  {
+    "query": "what is exception handling",
+    "document": "Exception handling provides mechanisms for detecting and recovering from runtime errors."
+  },
+  {
+    "query": "what is multithreading",
+    "document": "Multithreading enables multiple threads to execute concurrently within a single process."
+  },
+  {
+    "query": "what is synchronization",
+    "document": "Synchronization coordinates concurrent access to shared resources to prevent inconsistencies."
+  },
+  {
+    "query": "what is race condition",
+    "document": "A race condition occurs when multiple threads access shared data in an unpredictable order."
+  },
+  {
+    "query": "what is mutex",
+    "document": "A mutex is a synchronization mechanism that ensures only one thread accesses a critical section at a time."
+  },
+  {
+    "query": "what is semaphore",
+    "document": "A semaphore controls access to shared resources by maintaining a count of available permits."
+  },
+  {
+    "query": "what is star schema",
+    "document": "A star schema organizes a data warehouse using one fact table connected to multiple dimension tables."
+  },
+  {
+    "query": "what is data warehouse",
+    "document": "A data warehouse stores integrated historical data optimized for reporting and analytics."
+  },
+  {
+    "query": "what is data lake",
+    "document": "A data lake stores structured and unstructured data in its original format for future analysis."
+  },
+  {
+    "query": "what is nosql database",
+    "document": "A NoSQL database stores data using flexible models such as documents, key-value pairs, or graphs."
+  },
+  {
+    "query": "what is document database",
+    "document": "A document database stores information as self-contained documents rather than rows and columns."
+  },
+  {
+    "query": "what is key value store",
+    "document": "A key-value store manages data as unique keys associated with corresponding values."
+  },
+  {
+    "query": "what is graph database",
+    "document": "A graph database represents data as nodes and relationships for efficient traversal of connected information."
+  },
+  {
+    "query": "what is sharding",
+    "document": "Sharding distributes database records across multiple servers to improve scalability."
+  },
+  {
+    "query": "what is replication",
+    "document": "Replication maintains multiple copies of data across systems to improve availability and fault tolerance."
+  },
+  {
+    "query": "what is load testing",
+    "document": "Load testing evaluates system performance under expected levels of user activity."
+  },
+  {
+    "query": "what is stress testing",
+    "document": "Stress testing measures how a system behaves under workloads beyond its intended capacity."
+  },
+  {
+    "query": "what is regression testing",
+    "document": "Regression testing verifies that recent code changes have not introduced defects into existing functionality."
+  },
+  {
+    "query": "what is code review",
+    "document": "Code review is the systematic examination of source code to improve quality and detect defects."
+  },
+  {
+    "query": "what is software architecture",
+    "document": "Software architecture defines the high-level structure and organization of a software system."
+  },
+  {
+    "query": "what is microservices",
+    "document": "Microservices architecture builds applications as independent services that communicate through lightweight protocols."
+  },
+  {
+    "query": "what is monolithic architecture",
+    "document": "A monolithic architecture develops all application components as a single deployable unit."
+  },
+  {
+    "query": "what is serverless computing",
+    "document": "Serverless computing allows developers to run applications without managing the underlying infrastructure."
+  },
+  {
+    "query": "what is edge computing",
+    "document": "Edge computing processes data closer to where it is generated to reduce latency."
+  },
+  {
+    "query": "what is distributed system",
+    "document": "A distributed system consists of multiple computers that work together as a single coordinated system."
+  },
+  {
+    "query": "what is fault tolerance",
+    "document": "Fault tolerance enables a system to continue operating despite failures of individual components."
+  },
+  {
+    "query": "what is scalability",
+    "document": "Scalability is the ability of a system to handle increasing workloads by expanding available resources."
+  },
+  {
+    "query": "what is availability",
+    "document": "Availability measures how consistently a system remains operational and accessible to users."
+  },
+  {
+    "query": "what is latency optimization",
+    "document": "Latency optimization reduces delays in processing and communication to improve response times."
+  },
+  {
+    "query": "what is anomaly detection",
+    "document": "Anomaly detection identifies unusual patterns in data that differ significantly from expected behavior."
+  },
+  {
+    "query": "what is model inference",
+    "document": "Model inference is the process of using a trained machine learning model to generate predictions."
+  },
+  {
+    "query": "what is prompt engineering",
+    "document": "Prompt engineering involves designing effective inputs that guide large language models toward desired outputs."
+  },
+  {
+    "query": "what is vector database",
+    "document": "A vector database stores high-dimensional embeddings to enable efficient similarity search."
+  },
+  {
+    "query": "what is retrieval augmented generation",
+    "document": "Retrieval-Augmented Generation combines information retrieval with language generation to produce more accurate responses."
+  },
+  {
+    "query": "what is embedding",
+    "document": "An embedding is a numerical vector representation that captures the semantic meaning of data such as text or images."
+  }
+]

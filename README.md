@@ -384,12 +384,9 @@ using the same queries.
 
 # Future Improvements
 
-- Use the official Facebook DPR models
-- Train with positive and hard negative passages
-- Use FAISS for fast dense retrieval
-- Support large document collections
-- Add Precision@K, Recall@K, and MRR evaluation
-- Add a Streamlit or Gradio web interface
+- Use a huge dataset, for comparing **ann** techniques 
+- Add evaluation metrics
+- Use chunking 
 
 ---
 

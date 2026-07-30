@@ -12,10 +12,12 @@ The project demonstrates the difference between **sparse retrieval** (TF-IDF, BM
 
 # Project Structure
 
-```
-project/
+# Project Structure
+
+```text
+retrieval_comparison/
 │
-├── data/
+├── docs/
 │   └── documents.json
 │
 ├── embeddings/
@@ -25,6 +27,12 @@ project/
 │   ├── bert-base-uncased/
 │   ├── query_encoder/
 │   └── doc_encoder/
+│
+├── Evaluation/
+│   ├── benchmark.py
+│   ├── evaluator.py
+│   ├── metrics.py
+│   └── results/
 │
 ├── utils.py
 ├── preprocess.py
@@ -115,6 +123,35 @@ Unlike TF-IDF and BM25, DPR can retrieve semantically similar documents even whe
 
 ---
 
+# Retrieval Evaluation
+
+The retrieval systems are evaluated using standard Information Retrieval metrics.
+
+Implemented metrics
+
+- Precision@K
+- Recall@K
+- Mean Reciprocal Rank (MRR)
+- Mean Average Precision (MAP)
+
+Run the benchmark
+
+```bash
+python Evaluation/benchmark.py
+```
+
+Example evaluation results
+
+| Model | Precision@5 | Recall@5 | MRR | MAP |
+|--------|------------:|---------:|----:|----:|
+| TF-IDF | 0.1911 | 0.9556 | 0.7266 | 0.7266 |
+| BM25 | 0.1911 | 0.9556 | 0.6837 | 0.6837 |
+| DPR | **0.2000** | **1.0000** | **1.0000** | **1.0000** |
+
+The benchmark is performed on the project's custom retrieval dataset. Since each query has exactly one relevant document, MAP and MRR are identical for this dataset.
+
+---
+
 # Technologies Used
 
 - Python
@@ -126,13 +163,17 @@ Unlike TF-IDF and BM25, DPR can retrieve semantically similar documents even whe
 
 # Dataset Format
 
-```
+# Dataset Format
+
+```json
 [
     {
+        "doc_id": 0,
         "query": "what is nlp",
         "document": "Natural Language Processing enables computers to understand human language."
     },
     {
+        "doc_id": 1,
         "query": "what is machine learning",
         "document": "Machine learning enables computers to learn patterns from data."
     }
@@ -233,6 +274,23 @@ This performs
 - DPR Retrieval
 
 on both exact keyword queries and semantic queries.
+
+---
+
+## Step 3 — Evaluate Retrieval Performance
+
+Run
+
+```bash
+python Evaluation/benchmark.py
+```
+
+The benchmark evaluates all retrieval models on the complete dataset and reports:
+
+- Precision@5
+- Recall@5
+- Mean Reciprocal Rank (MRR)
+- Mean Average Precision (MAP)
 
 ---
 
@@ -384,9 +442,12 @@ using the same queries.
 
 # Future Improvements
 
-- Use a huge dataset, for comparing **ann** techniques 
-- Add evaluation metrics
-- Use chunking 
+- Benchmark FAISS ANN indexes (Flat, IVF, HNSW, Product Quantization)
+- Evaluate on large-scale retrieval datasets (MS MARCO, BEIR)
+- Hybrid Retrieval (BM25 + Dense Retrieval)
+- Cross-Encoder Re-ranking
+- Query Expansion
+- Chunking strategies for RAG
 
 ---
 

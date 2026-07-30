@@ -43,8 +43,9 @@ def search_bm25(query, bm25, vocab, word2idx, idf, docs, top_k=3):
 
     results = []
 
-    for score,idx in zip(values, indices):
+    for score, idx in zip(values, indices):
         results.append({
+            "doc_id": docs[idx]["doc_id"],
             "document": docs[idx]["document"],
             "score": float(score)
         })

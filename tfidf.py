@@ -69,6 +69,7 @@ def search_tfidf(query, tfidf, vocab, word2idx, idf, docs, top_k=3):
 
     for score, idx in zip(scores, indices):
         results.append({
+            "doc_id": docs[idx]["doc_id"],
             "document": docs[idx]["document"],
             "score": float(score)
         })

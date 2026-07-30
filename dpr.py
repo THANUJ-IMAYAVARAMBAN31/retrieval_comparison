@@ -4,14 +4,16 @@ import torch.nn.functional as F
 import os
 import re
 from utils import load_data
+from pathlib import Path
 
 device = torch.device(
     "cuda" if torch.cuda.is_available() else "cpu"
 )
 
-QUERY_MODEL_PATH = "project/models/query_encoder"
+BASE_DIR = Path(__file__).resolve().parent
 
-EMBEDDING_PATH = "project/embeddings/document_embeddings.pt"
+QUERY_MODEL_PATH = BASE_DIR / "models" / "query_encoder"
+EMBEDDING_PATH = BASE_DIR / "embeddings" / "document_embeddings.pt"
 
 data = load_data()
 
@@ -75,6 +77,8 @@ def search_dpr(query,top_k=2):
 
         results.append({
 
+            "doc_id": data[idx]["doc_id"],
+
             "document": data[idx]["document"],
 
             "score": float(score)
@@ -82,3 +86,5 @@ def search_dpr(query,top_k=2):
         })
 
     return results
+
+    

@@ -1,90 +1,57 @@
-from transformers import AutoModel, AutoTokenizer
+from sentence_transformers import SentenceTransformer
 import torch
-import torch.nn.functional as F
-import os
-import re
 from utils import load_data
-from pathlib import Path
 
-device = torch.device(
-    "cuda" if torch.cuda.is_available() else "cpu"
-)
+MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
-BASE_DIR = Path(__file__).resolve().parent
-
-QUERY_MODEL_PATH = BASE_DIR / "models" / "query_encoder"
-EMBEDDING_PATH = BASE_DIR / "embeddings" / "document_embeddings.pt"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 data = load_data()
 
-def load_query_encoder():
-    model = AutoModel.from_pretrained(QUERY_MODEL_PATH)
-    tokenizer = AutoTokenizer.from_pretrained(QUERY_MODEL_PATH)
+documents = [
+    item["document"]
+    for item in data
+]
 
-    model.to(device)
-    model.eval()
+print("Loading dense retrieval model...")
 
-    return model, tokenizer
+model = SentenceTransformer(
+    MODEL_NAME,
+    device=device
+)
 
-def load_document_embeddings():
-    embeddings = torch.load(EMBEDDING_PATH,map_location=device)
-    return embeddings
+print("Creating document embeddings...")
 
-def encode_query(query, model, tokenizer):
-    inputs = tokenizer(query,padding=True,truncation=True,return_tensors="pt")
-    inputs = {
-        k: v.to(device)
-        for k, v in inputs.items()
-    }
+document_embeddings = model.encode(
+    documents,
+    convert_to_tensor=True,
+    normalize_embeddings=True,
+    show_progress_bar=True
+)
 
-    with torch.no_grad():
-        outputs = model(**inputs)
+def search_dpr(query, top_k=5):
+    query_embedding = model.encode(
+        query,
+        convert_to_tensor=True,
+        normalize_embeddings=True
+    )
 
-        embedding = mean_pooling(outputs, inputs["attention_mask"])
-
-        embedding = F.normalize(embedding,dim=1)
-
-        return embedding
-
-def mean_pooling(outputs, attention_mask):
-
-    token_embeddings = outputs.last_hidden_state
-
-    mask = attention_mask.unsqueeze(-1).float()
-
-    pooled = (token_embeddings * mask).sum(dim=1)
-    pooled = pooled / mask.sum(dim=1)
-
-    return pooled
-
-def search_dpr(query,top_k=2):
-    model, tokenizer = load_query_encoder()
-
-    document_emb = load_document_embeddings()
-
-    query_embedding = encode_query(query, model, tokenizer)
-
-    scores = query_embedding @ document_emb.T
+    scores = document_embeddings @ query_embedding
 
     values, indices = torch.topk(
         scores,
-        top_k
+        k=min(top_k, len(data))
     )
 
     results = []
 
-    for score, idx in zip(values[0], indices[0]):
+    for score, idx in zip(values, indices):
+        idx = int(idx)
 
         results.append({
-
             "doc_id": data[idx]["doc_id"],
-
             "document": data[idx]["document"],
-
             "score": float(score)
-
         })
 
     return results
-
-    
